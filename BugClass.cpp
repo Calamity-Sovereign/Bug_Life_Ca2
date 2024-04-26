@@ -4,11 +4,13 @@
 #include "BugClass.h"
 
 
-BugClass::BugClass(int id, int size, const std::string &direction)
+BugClass::BugClass(int id, int size, const std::string &direction, int x,int y)
         : id(id), location(location), size(size), direction(direction){
 
-
     isAlive = true;
+
+    location.first = x;
+    location.second = y;
 }
 
 int BugClass::getId() const {
@@ -16,6 +18,7 @@ int BugClass::getId() const {
 }
 
 const std::pair<int, int> &BugClass::getLocation() const {
+
     return location;
 }
 
@@ -29,8 +32,8 @@ const std::string &BugClass::getDirection() const {
 
 bool BugClass::isAlive1() const {
     return isAlive;
+
+
 }
-
-
 
 

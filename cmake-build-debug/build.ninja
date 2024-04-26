@@ -61,6 +61,12 @@ build CMakeFiles/Bug_Life_Ca1.dir/BugClass.cpp.obj: CXX_COMPILER__Bug_Life_Ca1_u
   OBJECT_DIR = CMakeFiles\Bug_Life_Ca1.dir
   OBJECT_FILE_DIR = CMakeFiles\Bug_Life_Ca1.dir
 
+build CMakeFiles/Bug_Life_Ca1.dir/Hopper.cpp.obj: CXX_COMPILER__Bug_Life_Ca1_unscanned_Debug C$:/Users/flori/CLionProjects/Bug$ Life$ Ca1/cmake-build-debug/Hopper.cpp || cmake_object_order_depends_target_Bug_Life_Ca1
+  DEP_FILE = CMakeFiles\Bug_Life_Ca1.dir\Hopper.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Bug_Life_Ca1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Bug_Life_Ca1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Bug_Life_Ca1
@@ -69,7 +75,7 @@ build CMakeFiles/Bug_Life_Ca1.dir/BugClass.cpp.obj: CXX_COMPILER__Bug_Life_Ca1_u
 #############################################
 # Link the executable Bug_Life_Ca1.exe
 
-build Bug_Life_Ca1.exe: CXX_EXECUTABLE_LINKER__Bug_Life_Ca1_Debug CMakeFiles/Bug_Life_Ca1.dir/main.cpp.obj CMakeFiles/Bug_Life_Ca1.dir/BugClass.cpp.obj
+build Bug_Life_Ca1.exe: CXX_EXECUTABLE_LINKER__Bug_Life_Ca1_Debug CMakeFiles/Bug_Life_Ca1.dir/main.cpp.obj CMakeFiles/Bug_Life_Ca1.dir/BugClass.cpp.obj CMakeFiles/Bug_Life_Ca1.dir/Hopper.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Bug_Life_Ca1.dir

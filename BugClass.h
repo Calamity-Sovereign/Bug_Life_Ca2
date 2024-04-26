@@ -7,7 +7,7 @@
 #include <string>
 
 class BugClass {
-    BugClass(int id, const std::pair<int, int> &location, int size, const std::string &direction, int hopLength);
+
 
     int id;
     std::string type;
@@ -17,8 +17,10 @@ class BugClass {
     int hopLength;
     bool isAlive;
 
+
+
 public:
-    BugClass(int id, int size, const std::string &direction);
+    BugClass(int id, int size, const std::string &direction, int x, int y);
 
     int getId() const;
 
@@ -29,6 +31,7 @@ public:
     const std::string &getDirection() const;
 
     bool isAlive1() const;
+
 };
 
 
