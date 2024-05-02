@@ -6,9 +6,23 @@
 #define BUG_LIFE_CA1_CRAWLER_H
 
 
-class Crawler {
 
+#include <iostream>
+#include "BugClass.h"
+
+class Crawler: public BugClass {
+    Crawler(int id, int size, int &direction, int x, int y);
+
+
+    void move() override;
 };
+
+
+
+////
+
+
+
 
 
 #endif //BUG_LIFE_CA1_CRAWLER_H

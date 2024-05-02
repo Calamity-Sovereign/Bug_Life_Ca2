@@ -9,18 +9,17 @@
 class BugClass {
 
 
+protected:
+    int direction;
     int id;
     std::string type;
     std::pair<int, int> location;
     int size;
-    std::string direction;
     int hopLength;
     bool isAlive;
 
-
-
 public:
-    BugClass(int id, int size, const std::string &direction, int x, int y);
+    BugClass(int id, int size, int direction, int x, int y);
 
     int getId() const;
 
@@ -28,9 +27,13 @@ public:
 
     int getSize() const;
 
-    const std::string &getDirection() const;
+    int getDirection() const;
 
     bool isAlive1() const;
+
+    virtual void move() =0;
+
+    void changeDirection();
 
 };
 

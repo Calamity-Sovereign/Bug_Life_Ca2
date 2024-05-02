@@ -4,8 +4,8 @@
 #include "BugClass.h"
 
 
-BugClass::BugClass(int id, int size, const std::string &direction, int x,int y)
-        : id(id), location(location), size(size), direction(direction){
+BugClass::BugClass(int id, int size, int direction, int x,int y)
+{
 
     isAlive = true;
 
@@ -26,14 +26,18 @@ int BugClass::getSize() const {
     return size;
 }
 
-const std::string &BugClass::getDirection() const {
+int BugClass::getDirection() const {
     return direction;
 }
 
 bool BugClass::isAlive1() const {
     return isAlive;
 
-
+}
+// changes the direction that the bug is facing at random out of 4
+void BugClass::changeDirection() {
+    srand(time(nullptr));
+    direction = rand() % 4;
 }
 
 
