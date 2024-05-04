@@ -17,8 +17,6 @@ class Crawler: public BugClass {
     void move() override;
 };
 
-
-
 ////
 
 

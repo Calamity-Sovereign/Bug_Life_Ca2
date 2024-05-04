@@ -10,4 +10,6 @@ add_executable(Bug_Life_Ca1 main.cpp
         cmake-build-debug/Hopper.h
         Crawler.cpp
         Crawler.h
+        Board.cpp
+        Board.h
 )
