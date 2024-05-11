@@ -12,4 +12,6 @@ add_executable(Bug_Life_Ca1 main.cpp
         Crawler.h
         Board.cpp
         Board.h
+        StickBug.cpp
+        StickBug.h
 )

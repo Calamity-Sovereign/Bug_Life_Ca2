@@ -40,4 +40,14 @@ void BugClass::changeDirection() {
     direction = rand() % 4;
 }
 
+void BugClass::dance() {
+    std::cout << "Bug " << id << " is dancing!" << std::endl;
+}
+
+
+void BugClass::isActive(bool active) {
+    setActive = active;
+}
+
+
 

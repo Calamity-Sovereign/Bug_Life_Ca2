@@ -17,6 +17,7 @@ protected:
     int size;
     int hopLength;
     bool isAlive;
+    bool setActive = true;
 
 public:
     BugClass(int id, int size, int direction, int x, int y);
@@ -34,6 +35,10 @@ public:
     virtual void move() =0;
 
     void changeDirection();
+
+    virtual void dance();
+
+    void isActive(bool active);
 
 };
 
